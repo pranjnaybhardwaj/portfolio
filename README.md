@@ -12,11 +12,8 @@ Data Engineer at Vesta Insigths, Dublin, Ireland
 -09-2024 to present ,
 
 • Building a product that delivers insights for smarter mortgage default prediction using machine learning models.
-
 • Designing the backend architect of the product with team.
-
 • Building Data & ML pipelines on Cloud.
-
 
 IT Sr. Associate(Role:- Data Engineer)
 07-2021 to 07-2023
@@ -29,9 +26,8 @@ at NTT DATA, India,
 
 • Managed dataflow solutions and contributed to migrating data pipelines from SAP HANA to Snowflake Cloud.
 
-• Processed and transformed financial data pipelines with 90% accuracy on reporting data.
-
-- Designed and implemented over 30 data workflows using Airflow and Informatica IICS, significantly enhancing data
+• Processed and transformed financial data pipelines with 90% accuracy on reporting data,
+  Designed and implemented over 30 data workflows using Airflow and Informatica IICS, significantly enhancing data
   pipeline efficiency.
   
 • Played a key role in debugging and resolving critical production incidents. Collaborated with global teams, including
@@ -44,20 +40,21 @@ at NTT DATA, India,
 ### Projects
 1) Air quality prediction in Dublin City.
    -Used ML models such as SARIMAX, LSTM to Forecast AQI.
-   Results-
-2) SARIMAX is good for short Term prediction while LSTM is good for Long term prediction.
-   -Link:-
-3) SPAM & HAM Classification on AWS Cloud.
+   Results- SARIMAX is good for short Term prediction while LSTM is good for Long term prediction.
+   -Link:-.
+2) SPAM & HAM Classification on AWS Cloud.
    -Designed and developed a simple and rudimentary spam detection system using the following technologies.
-   -AWS, MapReduce, Hadoop, Hive, EMR, Spark-( PySpark, Hql)
-   -Link:-
-4) ETSY Product Classification.
+   -AWS, MapReduce, Hadoop, Hive, EMR, Spark-( PySpark, Hql).
+   -Link:-.
+3) ETSY Product Classification.
    -Predicting text category and color of products using CNN Achieved F1 of 0.75.
-   -Link:-
-5) Customer Churn explanation using Ex-AI.
-  -Results:-
-   Top Models: Random Forest and XGBoost outperformed others in terms of accuracy and interpretability.
-   SHAP Insights: Highlighted key drivers of churn, enabling actionable strategies for customer retention.
-   -Link:-
+   -Link:-.
+4) Customer Churn explanation using Ex-AI.
+  -Results- Top Models: Random Forest and XGBoost outperformed others in terms of accuracy and interpretability.
+            SHAP Insights: Highlighted key drivers of churn, enabling actionable strategies for customer retention.
+   -Link:-.
+
+###Key Skills:-
+
 
 
