@@ -3,7 +3,7 @@
 ### Education
 MSc in Computing(Data Sceince & Analytics) | DCU, Dublin, (09-2023 to 08-2024)
 
-B.Tech in Computer Science & Engineering | SRMIST, India (07-2017 to 05-2021)
+B.Tech in Computer Science & Engineering, SRMIST, India (07-2017 to 05-2021)
 
 ### Work Experience
 **Data Engineer @ Vesta Insigths, Dublin, Ireland (09-2024 to present)
