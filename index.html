@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjnay Bhardwaj - Data & Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            backdrop-filter: blur(10px);
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .contact-item:hover {
+            opacity: 1;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .duration {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .achievements {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .achievements li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .achievements li:before {
+            content: "▶";
+            color: #667eea;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        .project-links {
+            margin-top: 10px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+
+        .project-link:hover {
+            background: #5a67d8;
+        }
+
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cert-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .award {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .main-content {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-img">PB</div>
+            <h1>Pranjnay Bhardwaj</h1>
+            <div class="subtitle">Software & Data Engineer</div>
+            <div class="contact-info">
+                <div class="contact-item">📍 Dublin, Ireland</div>
+                <a href="tel:+353892771556" class="contact-item">📞 +353 89 277 1556</a>
+                <a href="mailto:pranjnaybhardwaj@gmail.com" class="contact-item">✉️ pranjnaybhardwaj@gmail.com</a>
+                <a href="https://linkedin.com/in/pranjnay-bhardwaj-716631192" target="_blank" class="contact-item">💼 LinkedIn</a>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="section">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    Software & Data Engineer with 3 years of industry experience and an MSc in Computing. Skilled in building backend systems, APIs, and cloud-native applications with hands-on expertise in AI/ML integration. Experienced in developing scalable data-driven solutions, deploying services on AWS and ensuring secure, compliant infrastructure. Proven track record of delivering robust applications independently and leading technical initiatives within agile teams.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Work Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Data Engineer (Part-time)</div>
+                    <div class="company">Vesta Insights • Dublin, Ireland</div>
+                    <div class="duration">09/2024 - Present</div>
+                    <p>Explainable AI-driven solutions that address biases and inefficiencies in the mortgage and lending industry</p>
+                    <ul class="achievements">
+                        <li>Building a decision engine product using ML & explainable AI by integrating customer feedback into UI/UX</li>
+                        <li>Built ML Models for mortgage default prediction with a 5-7% increase in approvals by bank (Avant Money)</li>
+                        <li>Built a Knowledge Graph + LLMs-based app to generate explanations of ML model predictions (AWS Bedrock, AWS Neptune)</li>
+                        <li>Developed API using FastAPI and backend frontend for Streamlit application</li>
+                        <li>Managed Configuration & Infrastructure on AWS, implemented IAM and data control policies for compliance</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Information Technology Senior Associate</div>
+                    <div class="company">NTT Data Services • India</div>
+                    <div class="duration">07/2021 - 07/2023</div>
+                    <p>Client: Honeywell (Fortune 500 Co.), focused on EDW, BI and Analytics solutions for Finance Data Models</p>
+                    <ul class="achievements">
+                        <li>Drove team alignment and accountability through technical leadership in Scrum meetings with finance executives</li>
+                        <li>Processed, analyzed and transformed financial data pipelines with 90% accuracy in reporting data</li>
+                        <li>Developed key financial models such as credit risk, C2C, revenue margin, aging on Snowflake Honeywell EDW</li>
+                        <li>Handled major production incidents including data recovery using time travel and metadata query fixes</li>
+                        <li>Designed and implemented 30+ data workflows using Airflow and Informatica IICS</li>
+                        <li>Implemented data governance with Privacera for secure data transfers</li>
+                        <li>Collaborated with global teams and managed 10+ priority incidents within SLA</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="job-title">MSc in Computing</div>
+                    <div class="company">Dublin City University • Dublin, Ireland</div>
+                    <div class="duration">09/2023 - 10/2024</div>
+                    <p>Key modules: Machine Learning, Data Mining & Analytics, AI, Data Management and Visualization, Cloud Technologies, Statistical Data Analysis</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash/Shell</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">PySpark</span>
+                            <span class="skill-tag">Scikit-Learn</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Cloud & Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Neptune Graph DB</span>
+                            <span class="skill-tag">SAP HANA</span>
+                            <span class="skill-tag">Databricks</span>
+                            <span class="skill-tag">Docker & Kubernetes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Tools & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">Informatica IICS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">DBT</span>
+                            <span class="skill-tag">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Featured Projects</h2>
+                
+                <div class="project-item">
+                    <div class="job-title">RAG PDF Chatbot</div>
+                    <div class="duration">07/2025</div>
+                    <p>A Retrieval-Augmented Generation (RAG) chatbot that lets you upload PDF files and ask questions about their content. Built with LangChain and designed to run completely free using local models.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="job-title">Sports Analytics Dashboard</div>
+                    <div class="duration">01/2025 - 02/2025</div>
+                    <p>Developed a dashboard on Tableau to track the overall team performance of Manchester United, cleaned & transformed data using Snowflake.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pranjnaybhardwaj/Sports-Analytics" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="job-title">AQI Prediction Dublin</div>
+                    <div class="duration">01/2024 - 08/2024</div>
+                    <p>Built ML models to predict AQI using GIS & Time series data collected from DPD delivery vans. Visualized AQI heatmaps across Dublin using Folium for spatial trend analysis.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="job-title">Understanding Customer Churn</div>
+                    <div class="duration">01/2024 - 04/2024</div>
+                    <p>This project explores customer churn in the automotive industry using machine learning models like Random Forest and XGBoost, coupled with SHAP for explainability.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certifications</h2>
+                <div class="certifications">
+                    <div class="cert-badge">AWS Academy Graduate Data Engineering</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Awards</h2>
+                <div class="award">
+                    <strong>Virtuoso Award Winner by Honeywell</strong><br>
+                    Analytics - Automation for automation of end-to-end data pipeline (reduced manual effort by 20 hr/week)
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Connect With Me</h2>
+                <div class="project-links">
+                    <a href="https://github.com/pranjnaybhardwaj" target="_blank" class="project-link">GitHub Profile</a>
+                    <a href="https://leetcode.com/u/Pranjnay007/" target="_blank" class="project-link">LeetCode</a>
+                    <a href="https://www.hackerrank.com/profile/pobny" target="_blank" class="project-link">HackerRank</a>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Pranjnay Bhardwaj. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
